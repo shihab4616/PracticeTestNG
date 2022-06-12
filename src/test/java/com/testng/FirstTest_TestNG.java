@@ -1,5 +1,4 @@
 package com.testng;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -19,8 +18,6 @@ public class FirstTest_TestNG {
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
 		driver.findElement(By.name("q")).sendKeys("TestNG",Keys.ENTER);
-		System.out.println(driver.getTitle());
-		Thread.sleep(5000);
 		driver.quit();
 	}
 	
