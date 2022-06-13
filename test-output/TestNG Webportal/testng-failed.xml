@@ -3,16 +3,16 @@
 <suite name="Failed suite [TestNG Webportal]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Functional Testing(failed)">
     <classes>
-      <class name="com.TestNG_Webportal.VerifyTitleAndTextTest">
-        <methods>
-          <include name="titleTest"/>
-        </methods>
-      </class> <!-- com.TestNG_Webportal.VerifyTitleAndTextTest -->
       <class name="com.TestNG_Webportal.VerifyTitleTest">
         <methods>
           <include name="titleTest"/>
         </methods>
       </class> <!-- com.TestNG_Webportal.VerifyTitleTest -->
+      <class name="com.TestNG_Webportal.VerifyTitleAndTextTest">
+        <methods>
+          <include name="titleTest"/>
+        </methods>
+      </class> <!-- com.TestNG_Webportal.VerifyTitleAndTextTest -->
     </classes>
   </test> <!-- Functional Testing(failed) -->
 </suite> <!-- Failed suite [TestNG Webportal] -->
