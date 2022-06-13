@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.webportal.VerifyTitleAndTextTest">
+      <class name="com.testng.OrangeHRM">
         <methods>
-          <include name="titleTest"/>
+          <include name="EnterLoginDetails"/>
+          <include name="VarifyLogin"/>
+          <include name="VarifyMyInfo"/>
+          <include name="NavigateToMyInfo"/>
         </methods>
-      </class> <!-- com.webportal.VerifyTitleAndTextTest -->
+      </class> <!-- com.testng.OrangeHRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
