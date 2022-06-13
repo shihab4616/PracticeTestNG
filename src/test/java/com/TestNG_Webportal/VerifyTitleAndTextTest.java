@@ -1,4 +1,4 @@
-package com.webportal;
+package com.TestNG_Webportal;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,9 +12,10 @@ public class VerifyTitleAndTextTest {
 	
 	WebDriver driver;
 	@Test
-	public void textTest() 
+	public void textTest()  
 	{
 		//This code for text varification
+		//ami je lekhata expected e diyechi seta jodi actual er sathe mile jay thle thik ache otherwise vul
 		String exceptedtext= "Search";
 		WebDriverManager.chromedriver().setup();
 		driver= new ChromeDriver();
