@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite setup and Teardown">
-  <test name="Test Before suite and After suite">
-    <classes>
-      <class name="com.TestNG_Webportal.GrpupsDemoTest2"/>
-    </classes>
-  </test> <!-- Test -->
+	<test name="Test Before suite and After suite">
+		<classes>
+			<class name="com.TestNG_Webportal.GrpupsDemoTest2" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -2,51 +2,76 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-14T11:37:07 BDT" name="Suite setup and Teardown" finished-at="2022-06-14T11:37:07 BDT" duration-ms="76">
+  <suite started-at="2022-06-14T12:40:57 BDT" name="Default suite" finished-at="2022-06-14T12:40:57 BDT" duration-ms="101">
     <groups>
-      <group name="abc">
-        <method signature="GrpupsDemoTest2.bTest3()[pri:0, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" name="bTest3" class="com.TestNG_Webportal.GrpupsDemoTest2"/>
-        <method signature="GrpupsDemoTest2.bTest4()[pri:0, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" name="bTest4" class="com.TestNG_Webportal.GrpupsDemoTest2"/>
-      </group> <!-- abc -->
-      <group name="User-registration">
-        <method signature="GrpupsDemoTest2.aTest1()[pri:1, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" name="aTest1" class="com.TestNG_Webportal.GrpupsDemoTest2"/>
-        <method signature="GrpupsDemoTest2.bTest2()[pri:2, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" name="bTest2" class="com.TestNG_Webportal.GrpupsDemoTest2"/>
-        <method signature="GrpupsDemoTest2.bTest3()[pri:0, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" name="bTest3" class="com.TestNG_Webportal.GrpupsDemoTest2"/>
-        <method signature="GrpupsDemoTest2.bTest4()[pri:0, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" name="bTest4" class="com.TestNG_Webportal.GrpupsDemoTest2"/>
-      </group> <!-- User-registration -->
-      <group name="regression">
-        <method signature="GrpupsDemoTest2.aTest1()[pri:1, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" name="aTest1" class="com.TestNG_Webportal.GrpupsDemoTest2"/>
-        <method signature="GrpupsDemoTest2.bTest2()[pri:2, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" name="bTest2" class="com.TestNG_Webportal.GrpupsDemoTest2"/>
-        <method signature="GrpupsDemoTest2.bTest3()[pri:0, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" name="bTest3" class="com.TestNG_Webportal.GrpupsDemoTest2"/>
-      </group> <!-- regression -->
     </groups>
-    <test started-at="2022-06-14T11:37:07 BDT" name="Test Before suite and After suite" finished-at="2022-06-14T11:37:07 BDT" duration-ms="76">
-      <class name="com.TestNG_Webportal.GrpupsDemoTest2">
-        <test-method is-config="true" signature="dataSetup()[pri:0, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" started-at="2022-06-14T11:37:07 BDT" name="dataSetup" finished-at="2022-06-14T11:37:07 BDT" duration-ms="14" status="PASS">
+    <test started-at="2022-06-14T12:40:57 BDT" name="Default test" finished-at="2022-06-14T12:40:57 BDT" duration-ms="101">
+      <class name="com.TestNG_Webportal.DataProviderDemoTest">
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG_Webportal.DataProviderDemoTest@611889f4]" started-at="2022-06-14T12:40:57 BDT" name="test" data-provider="dataSet" finished-at="2022-06-14T12:40:57 BDT" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataSetup -->
-        <test-method signature="bTest3()[pri:0, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" started-at="2022-06-14T11:37:07 BDT" name="bTest3" finished-at="2022-06-14T11:37:07 BDT" duration-ms="9" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG_Webportal.DataProviderDemoTest@611889f4]" started-at="2022-06-14T12:40:57 BDT" name="test" data-provider="dataSet" finished-at="2022-06-14T12:40:57 BDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bTest3 -->
-        <test-method signature="bTest4()[pri:0, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" started-at="2022-06-14T11:37:07 BDT" name="bTest4" finished-at="2022-06-14T11:37:07 BDT" duration-ms="2" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG_Webportal.DataProviderDemoTest@611889f4]" started-at="2022-06-14T12:40:57 BDT" name="test" data-provider="dataSet" finished-at="2022-06-14T12:40:57 BDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass3]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bTest4 -->
-        <test-method signature="aTest1()[pri:1, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" started-at="2022-06-14T11:37:07 BDT" name="aTest1" finished-at="2022-06-14T11:37:07 BDT" duration-ms="2" status="PASS">
+        </test-method> <!-- test -->
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG_Webportal.DataProviderDemoTest@611889f4]" started-at="2022-06-14T12:40:57 BDT" name="test" data-provider="dataSet" finished-at="2022-06-14T12:40:57 BDT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass4]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aTest1 -->
-        <test-method signature="bTest2()[pri:2, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" started-at="2022-06-14T11:37:07 BDT" name="bTest2" finished-at="2022-06-14T11:37:07 BDT" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bTest2 -->
-        <test-method is-config="true" signature="dataTeardown()[pri:0, instance:com.TestNG_Webportal.GrpupsDemoTest2@21282ed8]" started-at="2022-06-14T11:37:07 BDT" name="dataTeardown" finished-at="2022-06-14T11:37:07 BDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataTeardown -->
-      </class> <!-- com.TestNG_Webportal.GrpupsDemoTest2 -->
-    </test> <!-- Test Before suite and After suite -->
-  </suite> <!-- Suite setup and Teardown -->
+        </test-method> <!-- test -->
+      </class> <!-- com.TestNG_Webportal.DataProviderDemoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
