@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 public class Before_AfterTestNG {
 	
 	//if we use before test this is run after test ( Test shuru hobar age eita run hobe then test case run hobe)
+	//amra jodi @Beforeclass use kori tahole calss er age run korbe
 	@BeforeTest
 	public  void LoginToApplication() {
 		
