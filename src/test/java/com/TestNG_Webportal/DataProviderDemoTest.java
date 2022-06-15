@@ -11,6 +11,20 @@ public class DataProviderDemoTest {
 	{
 		System.out.println(username+"#########"+password);
 	}
+    
+    @DataProvider
+    public Object[][] dataSet1()
+	{
+    	return (Object[][]) new Object[] 
+    			   {
+    			   {"username", "password","test"},
+    			   {"username1", "password1","test1"},
+    	           {"username2" ,"password2", "test2"},
+    	           {"username3" ,"password3", "test3"}};
+    		 
+    	 
+    	
+  }
 
 	@DataProvider
 	public Object[][] dataSet()

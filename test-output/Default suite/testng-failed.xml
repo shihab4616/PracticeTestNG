@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG_Webportal.SkipDemoTest">
+      <class name="com.testng.LoginTestNG">
         <methods>
-          <include name="SkipTest2"/>
+          <include name="inValid_TestCase"/>
+          <include name="beforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="AfterTest"/>
+          <include name="launch_chrome"/>
+          <include name="beforeTest"/>
+          <include name="close_chrome"/>
         </methods>
-      </class> <!-- com.TestNG_Webportal.SkipDemoTest -->
+      </class> <!-- com.testng.LoginTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
