@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.LoginTestNG">
+      <class name="com.testng.LoginExtent">
         <methods>
-          <include name="inValid_TestCase"/>
           <include name="beforeMethod"/>
-          <include name="AfterMethod"/>
-          <include name="AfterTest"/>
-          <include name="launch_chrome"/>
+          <include name="Valid_TestCase"/>
           <include name="beforeTest"/>
           <include name="close_chrome"/>
+          <include name="AfterMethod"/>
+          <include name="launch_chrome"/>
+          <include name="AfterTest"/>
         </methods>
-      </class> <!-- com.testng.LoginTestNG -->
+      </class> <!-- com.testng.LoginExtent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

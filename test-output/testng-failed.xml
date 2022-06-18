@@ -1,35 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Login Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Login Functional Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.LoginTestNG">
+      <class name="com.testng.LoginExtent">
         <methods>
-          <include name="inValid_TestCase"/>
           <include name="beforeMethod"/>
-          <include name="AfterMethod"/>
-          <include name="AfterTest"/>
-          <include name="launch_chrome"/>
-          <include name="beforeTest"/>
-          <include name="close_chrome"/>
-        </methods>
-      </class> <!-- com.testng.LoginTestNG -->
-    </classes>
-  </test> <!-- Login Functional Test(failed) -->
-  <test thread-count="5" name="Login Functional Test2(failed)">
-    <classes>
-      <class name="com.testng.LoginTestNG">
-        <methods>
-          <include name="inValid_TestCase"/>
-          <include name="beforeMethod"/>
-          <include name="AfterMethod"/>
-          <include name="AfterTest"/>
-          <include name="launch_chrome"/>
           <include name="Valid_TestCase"/>
           <include name="beforeTest"/>
           <include name="close_chrome"/>
+          <include name="AfterMethod"/>
+          <include name="launch_chrome"/>
+          <include name="AfterTest"/>
         </methods>
-      </class> <!-- com.testng.LoginTestNG -->
+      </class> <!-- com.testng.LoginExtent -->
     </classes>
-  </test> <!-- Login Functional Test2(failed) -->
-</suite> <!-- Failed suite [Login Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

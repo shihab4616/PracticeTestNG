@@ -14,11 +14,15 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.reporters.HtmlHelper;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.observer.ExtentObserver;
+import com.aventstack.extentreports.reporter.ExtentReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+ 
  
 
 public class LoginExtent {
@@ -26,7 +30,7 @@ public class LoginExtent {
 	public static WebDriver driver;
  
 	//extentreport
-	public static ExtentHtmlReporter htmlReporter;
+	public static ExtentObserver[] htmlReporter;
 	public static ExtentReports reports;
 	public static ExtentTest test;
 	
@@ -76,7 +80,7 @@ public class LoginExtent {
 	public static void Valid_TestCase() {
 		
 		//Implement extent report
-		htmlReporter= new ExtentHtmlReporter( "./ExtentReports/LoginTest.html");
+		ExtentSparkReporter HtmlHelper = new ExtentSparkReporter( "./ExtentReports/LoginTest.html");
 		reports= new ExtentReports();
 		reports.attachReporter(htmlReporter);
 		
@@ -102,6 +106,8 @@ public class LoginExtent {
 		
 		System.out.println("Valid Test Case Execute");
 		test.log(Status.PASS, "Test Case Executed");//For test case executed
+		
+		reports.flush();
 
 	}
 

@@ -3,12 +3,7 @@
 <suite name="Login Test Suite">
 	<test name="Login Functional Test">
 		<classes>
-			<class name="com.testng.LoginTestNG" />
-		</classes>
-	</test>
-	<test name="Login Functional Test2">
-		<classes>
-			<class name="com.testng.LoginTestNG" />
+			<class name="ExtendReport.LoginExtent" />
 		</classes>
 	</test>
 </suite>  
