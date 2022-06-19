@@ -17,9 +17,9 @@ public class Login_Extent {
 	private static WebDriver driver;
 
 	public static void main(String[] args) {
+		 
 		
-		
-		ExtentSparkReporter spark = new ExtentSparkReporter("ExtentReports.html");
+		ExtentSparkReporter spark = new ExtentSparkReporter("target/ExtentReports.html");
 		
 		//Create ExtentReports and attached report
 		ExtentReports extent = new ExtentReports();

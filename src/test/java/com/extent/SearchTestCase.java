@@ -19,7 +19,7 @@ public class SearchTestCase {
 	ExtentReports extent = new ExtentReports();
 	ExtentSparkReporter spark = new ExtentSparkReporter("target/Spark.html");
 	
-	
+	 
 	@BeforeTest
 	public void browserLaunch() {
 		spark.config().setTheme(Theme.DARK);
@@ -55,7 +55,7 @@ public class SearchTestCase {
 		}
 		else
 		{
-			test.fail("paged title is not mathched expected results:"+pagetitle);
+			test.fail("paged title is not mathched expected results:");
 		}
 			
 		

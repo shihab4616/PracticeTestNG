@@ -14,11 +14,11 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class Extent_Basics {
 	
 	//Create ExtentReports and attached report
-	ExtentSparkReporter spark = new ExtentSparkReporter("ExtentReports.html");
+	ExtentSparkReporter spark = new ExtentSparkReporter("target/ExtentReports.html");
 	ExtentReports extent = new ExtentReports();
 
 	@Test 
-	public void f1() {
+	public void f1() { 
 		
 		//For author name test name and browser name detail's
 		ExtentTest test= extent.createTest("Launch Browser & Website").assignAuthor("Shihab Ahmed")
