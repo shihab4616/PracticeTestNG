@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -19,8 +20,9 @@ public class DP_LoginTest {
 
 	@BeforeTest  
 	public static void beforeTest() {
-
-		ExtentSparkReporter spark = new ExtentSparkReporter("target/Extent_ImikrofLogin.html");
+        
+		//generate a htmll report this location
+		ExtentSparkReporter spark = new ExtentSparkReporter("target/DP_LoginTest.html");
 		//Create ExtentReports and attached report
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(spark);
@@ -43,8 +45,9 @@ public class DP_LoginTest {
 
 
 
-	@Test
-	public static void Validation() {
+	@Test (dataProvider = "LoginData")
+	public static void Validation(String DP_Email, String DP_Pass) //string email, password pass korbe 
+	{
 		ExtentReports extent = new ExtentReports();
 
 		ExtentTest test2= extent.createTest("User E-mail validation")
@@ -59,8 +62,8 @@ public class DP_LoginTest {
 		//extent info clear email report 
 		test2.log(Status.INFO, "User Clear email");
 		Username.clear();
-		//extent user send valid email
-		Username.sendKeys("imikrof");
+		//jehetu amra string e call korchi tai eikhane email dite hobe naaaa
+		Username.sendKeys(DP_Email);
 
 
 		//user password
@@ -76,7 +79,8 @@ public class DP_LoginTest {
 		Password.clear();
 		//extent pass 
 		test3.log(Status.PASS, "User pass is valid");
-		Password.sendKeys(" ");
+		//jehetu amra string e call korchi tai eikhane pass dite hobe naaaa
+		Password.sendKeys(DP_Pass);
 
 		//user password
 		ExtentTest test4= extent.createTest("User Click validation")
@@ -101,6 +105,28 @@ public class DP_LoginTest {
 
 		driver.quit();
 
+	}
+
+	//amder onk somoy onk mail diye varification korte hoy alada alada mail use na kore eivabe use korle 
+	//eksathe onk mail diye differene vabe check korbe;
+	@DataProvider(name="LoginData")
+	public Object [][] data(){
+
+		Object [][] data= new Object[3][2];
+
+		//set 1
+		data[0][0]="mail1@gmail.com";
+		data[0][1]="12345";
+
+		//set 2
+		data[1][0]="mail2@gmail.com";
+		data[1][1]="12345";
+
+		//set 3
+		data[2][0]="mail3@gmail.com";
+		data[2][1]="12345";
+
+		return data;
 	}
 
 

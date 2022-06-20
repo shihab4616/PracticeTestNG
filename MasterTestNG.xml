@@ -3,7 +3,7 @@
 <suite name="TestNG Webportal">
   <test name="Functional Testing">
     <classes>
-      <class name="com.extent.Extent_ImikrofLogin"/>
+      <class name="DataProvider.DP_LoginTest"/>
     </classes>
   </test> 
 </suite>  

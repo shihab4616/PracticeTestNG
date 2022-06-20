@@ -60,7 +60,7 @@ public class Extent_ImikrofLogin {
 		test2.log(Status.INFO, "User Clear email");
 		Username.clear();
 		//extent user send valid email
-		Username.sendKeys(" ");
+		Username.sendKeys("imikrof");
 
 
 		//user password
