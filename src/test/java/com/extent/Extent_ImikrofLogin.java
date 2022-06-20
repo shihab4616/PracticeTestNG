@@ -60,7 +60,7 @@ public class Extent_ImikrofLogin {
 		test2.log(Status.INFO, "User Clear email");
 		Username.clear();
 		//extent user send valid email
-		Username.sendKeys("imikrof");
+		Username.sendKeys(" ");
 
 
 		//user password
@@ -76,7 +76,7 @@ public class Extent_ImikrofLogin {
 		Password.clear();
 		//extent pass 
 		test3.log(Status.PASS, "User pass is valid");
-		Password.sendKeys("##imikrof@2021");
+		Password.sendKeys(" ");
 
 		//user password
 		ExtentTest test4= extent.createTest("User Click validation")
