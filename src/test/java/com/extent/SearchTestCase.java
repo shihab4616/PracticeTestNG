@@ -32,7 +32,6 @@ public class SearchTestCase {
 
 	}
 
-
 	@Test
 	public void Extent_TC_001() {
 
@@ -59,30 +58,30 @@ public class SearchTestCase {
 		}		
 
 	}
-	
+
 	@Test
 	public void Extent_TC_002() {
 		ExtentTest test2 = extent.createTest("Varify User Email")
-		.assignAuthor("Rashiduzzman")
-		.assignAuthor("Shihab")
-		.assignCategory("Smoke test")
-		.assignDevice("Edge");
-		
+				.assignAuthor("Rashiduzzman")
+				.assignAuthor("Shihab")
+				.assignCategory("Smoke test")
+				.assignDevice("Edge");
+
 		test2.log(Status.PASS, "You are success to type EMail");
 		test2.info("Email type Success ");
 	}
-	
+
 	@Test
 	public void Extent_TC_003() {
 		ExtentTest test3 = extent.createTest("Varify LogIn Password")
-		.assignAuthor("Asmin Khan")
-		.assignCategory("Regression test")
-		.assignDevice("FireFox");
-		
+				.assignAuthor("Asmin Khan")
+				.assignCategory("Regression test")
+				.assignDevice("FireFox");
+
 		test3.log(Status.SKIP, "You must be type your password");
 		test3.info("Your pass is wrong");
 	}
-	 
+
 
 	@AfterTest
 	public void afterTest() {

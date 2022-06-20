@@ -1,4 +1,4 @@
-package com.TestNG_Webportal;
+package com.testng;
 
 import org.testng.annotations.Test;
 

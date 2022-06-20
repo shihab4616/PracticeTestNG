@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.LoginExtent">
+      <class name="com.testng.FirstTest_TestNG">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="Valid_TestCase"/>
-          <include name="beforeTest"/>
-          <include name="close_chrome"/>
-          <include name="AfterMethod"/>
-          <include name="launch_chrome"/>
-          <include name="AfterTest"/>
+          <include name="FacebookTest"/>
         </methods>
-      </class> <!-- com.testng.LoginExtent -->
+      </class> <!-- com.testng.FirstTest_TestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

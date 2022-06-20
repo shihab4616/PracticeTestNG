@@ -1,4 +1,4 @@
-package com.TestNG_Webportal;
+package com.testng;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

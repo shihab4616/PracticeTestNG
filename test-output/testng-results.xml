@@ -1,33 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-19T15:36:12 BDT" name="Default suite" finished-at="2022-06-19T15:36:19 BDT" duration-ms="7536">
+  <suite started-at="2022-06-20T14:34:50 BDT" name="TestNG Webportal" finished-at="2022-06-20T14:35:23 BDT" duration-ms="33055">
     <groups>
     </groups>
-    <test started-at="2022-06-19T15:36:12 BDT" name="Default test" finished-at="2022-06-19T15:36:19 BDT" duration-ms="7536">
-      <class name="com.extent.SearchTestCase">
-        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:com.extent.SearchTestCase@18317edc]" started-at="2022-06-19T15:36:12 BDT" name="browserLaunch" finished-at="2022-06-19T15:36:18 BDT" duration-ms="6265" status="PASS">
+    <test started-at="2022-06-20T14:34:50 BDT" name="Functional Testing" finished-at="2022-06-20T14:35:08 BDT" duration-ms="17897">
+      <class name="com.extent.Extent_ImikrofLogin">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.extent.Extent_ImikrofLogin@550dbc7a]" started-at="2022-06-20T14:34:50 BDT" name="beforeTest" finished-at="2022-06-20T14:34:56 BDT" duration-ms="5812" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserLaunch -->
-        <test-method signature="Extent_TC_001()[pri:0, instance:com.extent.SearchTestCase@18317edc]" started-at="2022-06-19T15:36:18 BDT" name="Extent_TC_001" finished-at="2022-06-19T15:36:18 BDT" duration-ms="53" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method signature="Validation()[pri:0, instance:com.extent.Extent_ImikrofLogin@550dbc7a]" started-at="2022-06-20T14:34:56 BDT" name="Validation" finished-at="2022-06-20T14:35:08 BDT" duration-ms="11545" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Extent_TC_001 -->
-        <test-method signature="Extent_TC_002()[pri:0, instance:com.extent.SearchTestCase@18317edc]" started-at="2022-06-19T15:36:18 BDT" name="Extent_TC_002" finished-at="2022-06-19T15:36:18 BDT" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Extent_TC_002 -->
-        <test-method signature="Extent_TC_003()[pri:0, instance:com.extent.SearchTestCase@18317edc]" started-at="2022-06-19T15:36:18 BDT" name="Extent_TC_003" finished-at="2022-06-19T15:36:18 BDT" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Extent_TC_003 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.extent.SearchTestCase@18317edc]" started-at="2022-06-19T15:36:18 BDT" name="afterTest" finished-at="2022-06-19T15:36:19 BDT" duration-ms="1152" status="PASS">
+        </test-method> <!-- Validation -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.extent.Extent_ImikrofLogin@550dbc7a]" started-at="2022-06-20T14:35:08 BDT" name="afterTest" finished-at="2022-06-20T14:35:08 BDT" duration-ms="466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.extent.SearchTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.extent.Extent_ImikrofLogin -->
+    </test> <!-- Functional Testing -->
+    <test started-at="2022-06-20T14:35:08 BDT" name="Functional Testing2" finished-at="2022-06-20T14:35:23 BDT" duration-ms="15121">
+      <class name="com.extent.Extent_ImikrofLogin">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.extent.Extent_ImikrofLogin@3012646b]" started-at="2022-06-20T14:35:08 BDT" name="beforeTest" finished-at="2022-06-20T14:35:11 BDT" duration-ms="3256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="Validation()[pri:0, instance:com.extent.Extent_ImikrofLogin@3012646b]" started-at="2022-06-20T14:35:11 BDT" name="Validation" finished-at="2022-06-20T14:35:23 BDT" duration-ms="11527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validation -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.extent.Extent_ImikrofLogin@3012646b]" started-at="2022-06-20T14:35:23 BDT" name="afterTest" finished-at="2022-06-20T14:35:23 BDT" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.extent.Extent_ImikrofLogin -->
+    </test> <!-- Functional Testing2 -->
+  </suite> <!-- TestNG Webportal -->
 </testng-results>

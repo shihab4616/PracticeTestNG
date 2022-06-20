@@ -1,12 +1,18 @@
-package com.TestNG_Webportal;
+package com.testng;
 
+ 
+import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 
-import Common.CommonDataSetup;
-
-@Test (groups= "User-registration")
-public class GrpupsDemoTest2  extends CommonDataSetup{
+public class SkipDemoTest {
 	
+	@BeforeGroups
+	public void BeforeClass() 
+	{
+		System.out.println("This code RUn Before Class");
+	}
+	
+	  
 	
 	@Test (priority=1, groups="regression")
 	public void aTest1() 
@@ -34,6 +40,7 @@ public class GrpupsDemoTest2  extends CommonDataSetup{
 	{
 		System.out.println("test4");
 	}
+	
 	
 
 }
